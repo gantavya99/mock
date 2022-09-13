@@ -5,13 +5,19 @@ function validateform() {
       return false;
     }
   }
-  function displayDateandTime(){
-   //document.getElementsById("demo").innerHTMl=Date();
-   document.getElementById("demo").innerHTML = Date();
-  }
+//   function displayDateandTime(){
+//    //document.getElementsById("demo").innerHTMl=Date();
+//    document.getElementById("demo").innerHTML = Date();
+//   }
   function mouseOn(){
     document.getElementById("box").innerHTML="Chal be chutiye!!";
   }
   function mouseOff(){
     document.getElementById("box").innerHTML="Aye Lund Aye Vapas Aana Idhar!";
   }
+  let element=document.getElementById("demo");
+    element.addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+} 
