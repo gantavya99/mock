@@ -1,0 +1,17 @@
+function validateform() {
+    let x = document.forms["myform"]["fname"].value;
+    if (x == "") {
+      alert("Name cannot be empty!");
+      return false;
+    }
+  }
+  function displayDateandTime(){
+   //document.getElementsById("demo").innerHTMl=Date();
+   document.getElementById("demo").innerHTML = Date();
+  }
+  function mouseOn(){
+    document.getElementById("box").innerHTML="Chal be chutiye!!";
+  }
+  function mouseOff(){
+    document.getElementById("box").innerHTML="Aye Lund Aye Vapas Aana Idhar!";
+  }
