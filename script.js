@@ -21,12 +21,13 @@
 // function myFunction() {
 //   alert ("Hello World!");
 // } 
+let imageElement=document.querySelector("#unsplashImage");
 let appId="9_jwuDWKrYfPAibVzfxcqZVd4oBXWwpnw13YCu1GbSk";
-let url=`https://api.unsplash.com/photos/?client_id=${appId}`;
+let url=`https://api.unsplash.com/photos/random/?client_id=${appId}`;
 fetch(url)
-.then(function response(){
+.then(function (response){
     return response.json();
 })
 .then(function (jsondata){
-    console.log(jsondata);
+    imageElement.src=jsondata.urls.regular;
 })
