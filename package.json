@@ -1,0 +1,22 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "Creating a REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gantavya99/mock.git"
+  },
+  "author": "Gantavya Saraswat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gantavya99/mock/issues"
+  },
+  "homepage": "https://github.com/gantavya99/mock#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
